@@ -1,0 +1,7 @@
+flask==1.0.2
+autopep8==1.5.4
+Flask-Bootstrap4==4.0.2
+flask-wtf==0.14.3
+Flask-Testing==0.8.0
+firebase-admin
+flask-login==0.4.1

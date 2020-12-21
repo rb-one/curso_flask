@@ -1,0 +1,4 @@
+#config.example must be renamed to config.py
+class Config:
+    SECRET_KEY = 'your secret key here'
+    

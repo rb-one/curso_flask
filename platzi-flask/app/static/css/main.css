@@ -1,0 +1,14 @@
+html * {
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 500px;
+}
+
+.btn
+{
+  width: 100px;
+  margin: 4px 0;
+}
+

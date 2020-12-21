@@ -1,0 +1,29 @@
+{% extends "bootstrap/base.html" %}
+
+{% block head %}
+{{ super() }}
+<link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" type="text/css" >
+<title>
+    { {% block title %} Flask Platzi | {% endblock title %}
+</title>
+{% endblock head %}
+
+{% block body %}
+    {% block navbar %}
+        {% include "navbar.html" %}
+    {% endblock navbar %}
+
+    {% for message in get_flashed_messages()  %}
+      <div class="alert alert-success allert-dismissible">
+          <button type="button" data-dismiss="alert" class="close">
+              &times;
+          </button>
+          {{ message }}
+      </div>
+    {% endfor %}
+        
+    {% block content %}{% endblock content %}
+    {% block scripts %}
+        {{ super() }}  
+    {% endblock scripts %}
+{% endblock body %}
